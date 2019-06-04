@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var str = "2134235325";
+
+    // console.log(str = str.split('').reverse().join(''));
+
+
+    var str = "2342315423543"
+
+    console.log(str = str.split(''));
+
+   // 1.分割成数组 // (13) ["2", "3", "4", "2", "3", "1", "5", "4", "2", "3", "5", "4", "3"]
+   //  2.reverse 倒序
+   //  join 转化成字符串
+    // console.log(str = str.split('').reverse().join(''));
+
+
+    // 将数字 12345678 转化成 RMB 形式 如： 12,345,678
+    // //个人方法； //思路：先将数字转为字符， str= str + '' ; //利用反转函数，每三位字符加一个 ','最后一位不加；
+    // re()是自定义的反转函数，最后再反转回去！
+    // var str = 12345678;
+    //
+    // for(var i = 1; i <= re(str).length; i++){
+    //     tmp += re(str)[i - 1];
+    //     if(i % 3 == 0 && i != re(str).length){
+    //         tmp += ',';
+    //
+    //     }
+    // }
+    //
+    // console.log(tmp);
+
+    // 取十个数
+
+    var num1 = [];
+
+    for (var i = 0; i < 5; i++){
+        num1[i] = Math.floor(Math.random()*10) + 1 ;//范围【1，10】
+        for (var j = 0; j < i; j++){
+            if (num1[i] == num1[j]){
+                i--;
+            }
+        }
+    }
+
+    console.log(num1);//
+
+    var num2 = [];
+
+    for (var i = 0; i<5; i++){
+        num2[i] = Math.floor(Math.random()*20) + 1;
+        for (var j = 0; j < i; j++){
+            if (num2[i] == num2[j]){
+                i--;
+            }
+        }
+    }
+
+    console.log(num2);
+
+
+</script>
+</html>
